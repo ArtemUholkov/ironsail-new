@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Gotham-normal';
+  font-size: 14px;
+  scroll-margin-top: 64px;
+}
+
+/*CSS RESET START*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*CSS RESET END*/
+
+/*COLOR VARIABLES START*/
+:root {
+  --dark-text: #141751;
+  --light-text: #ffffff;
+  --footer-text-color: #e7f0f8;
+
+  --dark-button-bg: #3a8aca;
+  --dark-button-text: #ffffff;
+  --dark-button-hover-bg: #2179bf;
+  --light-button-bg: #ffffff;
+  --light-button-text: #034387;
+  --light-button-hover-bg: #d5ebfd;
+
+  --accent-blue: #afcfe9;
+  --accent-rose: #a55ba4;
+}
+/*COLOR VARIABLES END*/
+
+/*COMMONT STYLES START*/
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  overflow: hidden;
+}
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 63px;
+  color: var(--main-text-color);
+}
