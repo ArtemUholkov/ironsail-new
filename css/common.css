@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Gotham-normal';
+
   font-size: 14px;
   scroll-margin-top: 64px;
 }
@@ -147,11 +147,69 @@ body {
   margin: 0 auto;
   z-index: 2;
   overflow: hidden;
+  background: #f8f8f9;
 }
-h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 63px;
-  color: var(--main-text-color);
+/* H1 */
+.main_title {
+  font-family: 'Lato', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+/* Section title */
+.section_title {
+  color: var(--dark-text);
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+/* Usual text */
+.text {
+  color: var(--dark-text);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 160%;
+}
+.main_button {
+  display: flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 6px;
+  background: var(--dark-button-bg);
+  color: var(--dark-button-text);
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 201px;
+  transition: all 0.3s;
+}
+.main_but_arrow {
+  width: 20px;
+  height: 18px;
+}
+.main_button:hover {
+  background: var(--dark-button-hover-bg);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+svg g path {
+  transition: all 0.3s;
+}
+.main_button:hover svg g path {
+  fill: #ffffff;
+  transition: all 0.3s;
+}
+svg {
+  transition: all 0.3s;
+}
+.main_button:hover svg {
+  transform: rotate(90deg);
+  transition: all 0.3s;
 }
