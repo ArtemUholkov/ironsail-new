@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/home/cta/bg-blue.png);
+    background-image: url('../../assets/img/home/cta/bg-blue.png');
     background-size: cover;
     background-position: center;
     margin-bottom: 180px;
@@ -39,7 +39,7 @@
 
 @media (max-width: 375px) {
     .cta {
-        background-image: url(/assets/img/home/cta/bg-blue-mobile.png);
+        background-image: url('../../assets/img/home/cta/bg-blue-mobile.png');
         height: 480px;
     }
 }

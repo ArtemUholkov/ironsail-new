@@ -22,19 +22,19 @@
 }
 
 .slider__container--hero1 {
-    background-image: url(/assets/img/home/slider/hero-1.png);
+    background-image: url('../../assets/img/home/slider/hero-1.png');
     background-size: cover;
     background-position: center;
 }
 
 .slider__container--hero2 {
-    background-image: url(/assets/img/home/slider/hero-2.png);
+    background-image: url('../../assets/img/home/slider/hero-2.png');
     background-size: cover;
     background-position: center;
 }
 
 .slider__container--hero3 {
-    background-image: url(/assets/img/home/slider/hero-3.png);
+    background-image: url('../../assets/img/home/slider/hero-3.png');
     background-size: cover;
     background-position: center;
 }
@@ -118,15 +118,15 @@
 }
 
 .slider__container--hero1.collapsed {
-    background: url(/assets/img/home/slider/hero-1-1.png) center / cover no-repeat;
+    background: url('../../assets/img/home/slider/hero-1-1.png') center / cover no-repeat;
 }
 
 .slider__container--hero2.collapsed {
-    background: url(/assets/img/home/slider/hero-2-1.png) center / cover no-repeat;
+    background: url('../../assets/img/home/slider/hero-2-1.png') center / cover no-repeat;
 }
 
 .slider__container--hero3.collapsed {
-    background: url(/assets/img/home/slider/hero-3-1.png) center / cover no-repeat;
+    background: url('../../assets/img/home/slider/hero-3-1.png') center / cover no-repeat;
 }
 
 .collapsed {

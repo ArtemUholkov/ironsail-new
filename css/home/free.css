@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/home/free/bg.png);
+    background-image: url('../../assets/img/home/free/bg.png');
     background-size: cover;
     background-position: center;
     gap: 124px;
@@ -130,7 +130,7 @@
 
 @media (max-width: 570px) {
     .free {
-        background-image: url(/assets/img/home/free/bg-mobile.png);
+        background-image: url('../../assets/img/home/free/bg-mobile.png');
         height: 754px;
     }
 }
