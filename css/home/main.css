@@ -26,7 +26,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../assets/img/home/main/desktop.svg');
+    background-image: url('../../digital-marketing/assets/img/main/hero-bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 5;
@@ -159,7 +159,7 @@
 
 @media (max-width: 375px) {
     .home-main__cover {
-        background-image: url(/assets/img/home/main/mobile.svg);
+        background-image: url('../../digital-marketing/assets/img/main/hero-mob-bg.png');
     }
 
     .home-main__container {
