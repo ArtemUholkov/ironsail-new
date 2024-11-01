@@ -1,0 +1,110 @@
+.mission-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.mission-section__image {
+    grid-row: 1 / span 2; 
+    grid-column: 1; 
+}
+
+.mission-section__image img {
+    width: 100%;
+    max-width: 570px;
+    max-height: 621px;
+    height: auto;
+}
+
+.mission-section__content {
+    grid-row: 1; 
+    grid-column: 2; 
+}
+
+.mission-section__title {
+    color: var(--dark-text);
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.mission-section__text {
+    color: var(--dark-text);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.mission-section__mission {
+    grid-row: 2; 
+    grid-column: 2; 
+    background-color: var(--accent-rose);
+    padding: 25px 43px;
+    text-align: center;
+}
+.mission-section__mission-title {
+    color: var(--light-text);
+    font-family: Oswald;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .mission-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .mission-section__image {
+        grid-row: 1; 
+        grid-column: 1; 
+    }
+
+    .mission-section__mission {
+        grid-row: 2; 
+    }
+
+    .mission-section__content {
+        grid-row: 3; 
+    }
+
+    .mission-section__title {
+        font-size: 24px;
+    }
+
+    .mission-section__mission-title {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-section {
+        padding: 20px;
+    }
+
+    .mission-section__title {
+        font-size: 20px;
+    }
+
+    .mission-section__text {
+        font-size: 16px;
+    }
+
+    .mission-section__mission-title {
+        font-size: 48px;
+    }
+}
