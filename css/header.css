@@ -190,6 +190,16 @@ svg {
     padding-left: 100px;
     padding-right: 100px;
   }
+  .header_button_pair {
+    display: none;
+  }
+  .mobile_header_button_pair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 1480px) {
   .navbar {
@@ -421,16 +431,6 @@ svg {
   }
 }
 @media (max-width: 560px) {
-  .header_button_pair {
-    display: none;
-  }
-  .mobile_header_button_pair {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    width: 100%;
-  }
   .main_button {
     text-align: center;
     margin-top: 28px;
