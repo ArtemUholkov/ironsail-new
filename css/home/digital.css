@@ -20,8 +20,8 @@
     font-size: 140px;
     font-weight: 700;
     text-transform: uppercase;
-    writing-mode: vertical-rl; 
-    transform: rotate(180deg); 
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     margin: 0;
 }
 
@@ -42,6 +42,13 @@
     border-radius: 4px;
     background-color: var(--light-text);
     position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.digital-marketing__card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .digital-marketing__title-container {
@@ -51,6 +58,8 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 32px;
+    position: relative;
+    z-index: 10;
 }
 
 .digital-marketing__icon {
@@ -67,6 +76,23 @@
     line-height: normal;
     text-transform: uppercase;
 }
+
+.digital-marketing__title {
+    transition: color 0.3s ease;
+}
+
+.digital-marketing__card:hover .digital-marketing__title {
+    color: var(--light-text); 
+}
+
+.digital-marketing__icon circle {
+    transition: stroke 0.3s ease; 
+}
+
+.digital-marketing__card:hover .digital-marketing__icon circle {
+    stroke: var(--light-text); 
+}
+
 
 .digital-marketing__subtitle {
     color: var(--dark-text);
@@ -95,6 +121,42 @@
     margin: 0 auto;
 }
 
+.digital-marketing__image-large {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.digital-marketing__card:hover .digital-marketing__image-large {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.digital-marketing__view-label {
+    position: absolute;
+    bottom: 18px;
+    left: 30px;
+    color: #FFF;
+    font-family: Impact;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.digital-marketing__card:hover .digital-marketing__view-label {
+    opacity: 1;
+}
+
 @media (max-width: 1870px) {
     .digital-marketing {
         padding: 120px;
@@ -109,63 +171,64 @@
 
 @media (max-width: 1304px) {
     .digital-marketing {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         padding: 100px 50px;
     }
 
     .digital-marketing__sidebar {
-        width: 100%; 
+        width: 100%;
         height: 174px;
-        justify-content: center; 
+        justify-content: center;
         padding: 20px;
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
     }
 
     .digital-marketing__sidebar h2 {
         font-size: 90px;
-        writing-mode: horizontal-tb; 
-        transform: none; 
+        writing-mode: horizontal-tb;
+        transform: none;
         text-align: center;
     }
 
     .digital-marketing__content {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 
 @media (max-width: 1220px) {
     .digital-marketing__card {
-        height: auto; 
-        padding: 20px; 
+        height: auto;
+        padding: 20px;
     }
 
     .digital-marketing__title-container {
-        flex-direction: row; 
-        gap: 5px; 
+        flex-direction: row;
+        gap: 5px;
     }
 
     .digital-marketing__title {
-        font-size: 28px; 
+        font-size: 28px;
     }
 
     .digital-marketing__subtitle {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .digital-marketing__text {
-        font-size: 14px; 
+        font-size: 14px;
     }
 }
+
 @media (max-width: 876px) {
     .digital-marketing__sidebar h2 {
         text-align: left;
-        font-size: 70px; 
+        font-size: 70px;
     }
 }
 
 @media (max-width: 729px) {
     .digital-marketing {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         padding: 50px 20px;
     }
 
@@ -176,23 +239,23 @@
     }
 
     .digital-marketing__sidebar h2 {
-        font-size: 70px; 
-        writing-mode: horizontal-tb; 
+        font-size: 70px;
+        writing-mode: horizontal-tb;
         transform: none;
     }
 
     .digital-marketing__content {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
     .digital-marketing__card {
         padding: 20px;
-        height: auto; 
+        height: auto;
     }
 
     .digital-marketing__title {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .digital-marketing__subtitle {
@@ -205,8 +268,8 @@
     }
 
     .digital-marketing__image {
-        max-width: 100%; 
-        max-height: 150px; 
+        max-width: 100%;
+        max-height: 150px;
         height: auto;
         position: relative;
     }
@@ -243,7 +306,7 @@
 
     .digital-marketing__card {
         flex: 0 0 auto;
-        width: 340px; 
+        width: 340px;
         margin: 0 auto;
         padding: 20px;
         border-radius: 4px;
