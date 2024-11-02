@@ -138,12 +138,6 @@
   .dm-reviews_wrapper {
     flex-direction: column-reverse;
   }
-  .desk_arr {
-    display: none;
-  }
-  .mob_arr {
-    display: flex;
-  }
   .dm-reviews {
     padding-top: 125px;
   }
@@ -165,5 +159,17 @@
   }
   .dm-reviews_mark_img {
     max-width: 360px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 0 !important;
+    top: initial !important;
+  }
+  .mySwiper {
+    padding-bottom: 30px;
+  }
+  .swiper-pagination {
+    top: initial !important;
+    bottom: 48px !important;
   }
 }
