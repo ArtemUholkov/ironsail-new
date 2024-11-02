@@ -10,14 +10,14 @@
 
 .slider__container {
     display: flex;
-    width: 100%;
+    width: 300px;
     max-width: 878px;
     height: 695px;
     padding: 57px 60px;
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: width 2.3s ease, transform 0.9s ease;
+    transition: width 3s ease, height 3s ease, opacity 3s ease, transform 3s ease;
     transform-origin: left;
 }
 
@@ -91,13 +91,35 @@
     margin-bottom: 22px;
 }
 
+@keyframes expandWidth {
+    from {
+        width: 300px;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes collapseWidth {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 300px;
+    }
+}
+
 .expanded {
-    width: 100%;
+    animation: expandWidth 0.7s ease forwards;
+}
+
+.slider__container.expanded {
+    width: 100%; /* Target width when expanded */
 }
 
 .slider__container.collapsed {
     width: 300px;
-    max-width: 300px;
+    transition: width 4s ease, height 4s ease; 
 }
 
 .slider__container.expanded .expand-btn {
@@ -114,7 +136,7 @@
     top: 57px;
     right: 50%;
     transform-origin: top right;
-    transition: transform 0.9s ease, top 0.9s ease, right 0.9s ease;
+    transition: transform 3s ease, top 3s ease, right 3s ease;
 }
 
 .slider__container--hero1.collapsed {
@@ -130,9 +152,7 @@
 }
 
 .collapsed {
-    width: 300px;
-    position: relative;
-    overflow: hidden;
+    animation: collapseWidth 0.7s ease forwards;
 }
 
 .expand-btn {
@@ -179,6 +199,10 @@
 @media (max-width: 1583px) {
     .slider {
         padding: 180px 100px;
+    }
+
+    .slider__menu {
+        display: none;
     }
 
     .slider__top-container {
@@ -275,10 +299,6 @@
     .expand-btn {
         right: auto;
         left: 17px;
-    }
-
-    .slider__menu {
-        display: none;
     }
 }
 

@@ -45,6 +45,14 @@
     flex-shrink: 0;
     border-radius: 4px;
     background-color: var(--light-text);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.resources-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .web-development {
@@ -102,6 +110,8 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 32px;
+    position: relative;
+    z-index: 5;
 }
 
 .resources-card__icon {
@@ -117,6 +127,22 @@
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.resources-card__title {
+    transition: color 0.3s ease;
+}
+
+.resources-card:hover .resources-card__title {
+    color: var(--light-text); 
+}
+
+.resources-card__icon circle {
+    transition: stroke 0.3s ease; 
+}
+
+.resources-card:hover .resources-card__icon circle {
+    stroke: var(--light-text); 
 }
 
 .resources-card__subtitle {
@@ -144,6 +170,42 @@
     object-fit: cover;
     border-radius: 4px;
 }
+
+.resources-card__image-large {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.resources-card:hover .resources-card__image-large {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.resources-card.software-development .resources-card__image-large,
+.resources-card.ai-programmatic .resources-card__image-large {
+    transform: translateX(100%); 
+    transition: transform 0.5s ease; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.resources-card.software-development:hover .resources-card__image-large,
+.resources-card.ai-programmatic:hover .resources-card__image-large {
+    transform: translateX(0); 
+}
+
+
 
 @media (max-width: 1480px) {
     .resources-section {
