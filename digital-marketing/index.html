@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <!-- fonts end -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>IronSail - Digital Marketing</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="css/dig-index.css" />
@@ -645,7 +646,75 @@
         </a>
       </div>
     </section>
-    <section class="dm_reviews"></section>
+    <section class="dm-reviews">
+      <div class="dm-reviews_wrapper">
+        <div class="dm-reviews_mark">
+          <img src="assets/img/reviews/46.png" alt="mark" class="dm-reviews_mark_img" />
+        </div>
+        <div class="dm-reviews-stars-trust_wrapper">
+          <div class="dm-stars_wrapper">
+            <img src="assets/img/reviews/star.svg" alt="" class="dm-star" />
+            <img src="assets/img/reviews/star.svg" alt="" class="dm-star" />
+            <img src="assets/img/reviews/star.svg" alt="" class="dm-star" />
+            <img src="assets/img/reviews/star.svg" alt="" class="dm-star" />
+            <img src="assets/img/reviews/star.svg" alt="" class="dm-star" />
+          </div>
+          <p class="dm-reviews_trusted_text">Trusted by dozens of medical providers in the US</p>
+        </div>
+        <div class="dm-reviews_slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide dm-reviews-slide">
+                <img src="assets/img/reviews/fb1.png" alt="fb1" class="dm_review_img" />
+                <p class="dm_reviews_name">Michael B.</p>
+                <p class="dm-reviews_text">
+                  “The IRONSAIL team has been nothing short of amazing. They are professional,
+                  helpful and the best at what they do. Our clinic has grown 2X since we’ve been
+                  working together.”
+                </p>
+              </div>
+              <div class="swiper-slide dm-reviews-slide">
+                <img src="assets/img/reviews/fb1.png" alt="fb1" class="dm_review_img" />
+                <p class="dm_reviews_name">Michael B.</p>
+                <p class="dm-reviews_text">
+                  “The IRONSAIL team has been nothing short of amazing. They are professional,
+                  helpful and the best at what they do. Our clinic has grown 2X since we’ve been
+                  working together.”
+                </p>
+              </div>
+              <div class="swiper-slide dm-reviews-slide">
+                <img src="assets/img/reviews/fb1.png" alt="fb1" class="dm_review_img" />
+                <p class="dm_reviews_name">Michael B.</p>
+                <p class="dm-reviews_text">
+                  “The IRONSAIL team has been nothing short of amazing. They are professional,
+                  helpful and the best at what they do. Our clinic has grown 2X since we’ve been
+                  working together.”
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next dm-but-next desk_arr"></div>
+            <div class="swiper-button-prev dm-but-prev desk_arr"></div>
+          </div>
+          <div class="swiper-button-next dm-but-next nxt mob_arr"></div>
+          <div class="swiper-button-prev dm-but-prev prv mob_arr"></div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: true,
+        navigation: {
+          nextEl: '.dm-but-next',
+          prevEl: '.dm-but-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
     <script src="../js/script.js"></script>
     <script src="js/script-dm.js"></script>
   </body>

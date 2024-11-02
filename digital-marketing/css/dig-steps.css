@@ -52,9 +52,14 @@
   align-items: center;
   justify-content: center;
   transform: rotate(-135deg);
-  animation: back 1s linear;
+
   position: relative;
+  transition: all 1s;
 }
+/* .im_hiw_item_number_wrapper:hover {
+  transform: rotate(45deg);
+  transition: all 1s;
+} */
 .number_in_circle {
 }
 
@@ -84,7 +89,7 @@
   align-items: center;
   justify-content: center;
 }
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     transform: rotate(-135deg);
   }
@@ -101,10 +106,10 @@
   100% {
     transform: rotate(-135deg);
   }
-}
+} */
 .im_hiw_item:hover .im_hiw_item_number_wrapper {
-  animation: rotate 1s linear;
-  animation-fill-mode: forwards;
+  transform: rotate(45deg);
+  transition: all 1s;
   cursor: pointer;
 }
 .im_hiw {

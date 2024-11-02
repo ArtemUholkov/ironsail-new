@@ -31,7 +31,7 @@
   }
 }
 @media (max-width: 930px) {
-  .ready {
+  .dm-ready {
     display: none;
   }
 }
