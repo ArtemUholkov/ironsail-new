@@ -126,6 +126,10 @@
   bottom: -150px;
 }
 @media (max-width: 1260px) {
+  .dm-steps {
+    padding-bottom: 40px;
+  }
+
   .im_hiw_right_ab_image {
     width: 178.898px;
     height: 239.537px;

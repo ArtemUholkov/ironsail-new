@@ -172,4 +172,7 @@
     top: initial !important;
     bottom: 48px !important;
   }
+  .dm-reviews {
+    padding-top: 0;
+  }
 }
