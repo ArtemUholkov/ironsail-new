@@ -194,6 +194,41 @@
     font-style: normal;
     font-weight: 500;
     line-height: 22.4px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.slider__menu-item:hover {
+    color: var(--dark-text);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.slider__menu-item:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 1.5px;
+    display: block;
+    background-color: #afcfe9;
+    transition: 0.5s;
+    margin-top: 2px;
+}
+
+.slider__menu-item:hover::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 1583px) {
