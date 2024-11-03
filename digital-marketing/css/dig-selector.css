@@ -59,18 +59,18 @@
   transition: all 0.3s;
 }
 .dm-selector_item:hover {
-  background: #141751;
+  background: #cfe2f2;
   transition: all 0.3s;
   cursor: pointer;
   z-index: 97;
 }
 .dm-selector_item:hover svg path {
-  fill: #fff;
-  transition: all 0.3s;
+  /* fill: #fff;
+  transition: all 0.3s; */
 }
 .dm-selector_item:hover .dm_item_content_text {
-  color: #fff;
-  transition: all 0.3s;
+  /* color: #fff;
+  transition: all 0.3s; */
 }
 #itemmain {
   top: 0;
@@ -128,7 +128,7 @@
   justify-content: center;
 }
 .active_selector {
-  background: var(--dark-text);
+  background: var(--dark-text) !important;
   z-index: 98;
 }
 .active_selector svg path {
