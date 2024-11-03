@@ -23,18 +23,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('../assets/img/main/hero-bg.png');
+  background-image: url('../assets/img/main/desktop.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 5;
 }
 .dig-main_cover-mob {
   height: 100svh;
-  width: 100svw;
+  width: 100.5svw;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('../assets/img/main/hero-mob-bg.png');
+  background-image: url('../assets/img/main/mobile2.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 5;

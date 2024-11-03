@@ -1,6 +1,7 @@
 .dm-revenue {
   padding-top: 180px;
   width: 100%;
+  position: relative;
 }
 .dm-revenue_wrapper {
   padding-left: 200px;
@@ -29,6 +30,44 @@
   text-transform: uppercase;
   margin-bottom: 63px;
   max-width: 723px;
+}
+
+.revenue_menu {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-40%);
+  display: flex;
+  padding: 22px 15px 22px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22px;
+  border-radius: 0px 4px 4px 0px;
+  background: #fff;
+  box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
+  max-width: 159px;
+  z-index: 99;
+}
+.revenue_menu a {
+  color: #a5a5a7;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: none;
+}
+.revenue_menu a:hover {
+  opacity: 0.6;
+}
+.revenue_menu.sticky {
+  position: fixed;
+  top: 50%; /* Middle of the screen */
+  transform: translateY(-50%); /* Center the element vertically */
+}
+@media (max-width: 1780px) {
+  .revenue_menu {
+    display: none;
+  }
 }
 @media (max-width: 1700px) {
   .dm-revenue_wrapper {

@@ -1,6 +1,6 @@
 .dm-reviews {
   padding-top: 180px;
-  padding-bottom: 180px;
+
   width: 100%;
 }
 .dm-reviews_wrapper {
@@ -152,7 +152,6 @@
     font-size: 18px;
   }
   .dm-reviews_wrapper {
-    padding-bottom: 150px;
   }
   .dm-reviews {
     padding-bottom: 0;
