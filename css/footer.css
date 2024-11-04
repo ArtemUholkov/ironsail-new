@@ -2,7 +2,7 @@
   padding-left: 320px;
   padding-right: 320px;
   width: 100%;
-  background: url('../assets/img/footer/footerbg.svg');
+  background: url('assets/img/footer/footerbg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 100px;
@@ -171,7 +171,7 @@
   }
   .footer_wrapper {
     width: 100%;
-    background: url('../assets/img/footer/footerbgmob.svg');
+    background: url('assets/img/footer/footerbgmob.svg');
     background-repeat: no-repeat;
     background-size: cover;
   }
