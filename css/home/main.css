@@ -1,36 +1,46 @@
 .home-main {
+    height: calc(100svh);
+    width: 100svw;
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-    background-color: #000;
     position: relative;
     overflow: hidden;
 }
 
 .home-main__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: center; 
     z-index: 3;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-55%, -50%);
 }
 
 .home-main__cover {
-    min-height: 100svh;
+    min-height: 100.5svh;
     min-width: 100svw;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../../digital-marketing/assets/img/main/hero-bg.png');
+    background-image: url('../../digital-marketing/assets/img/main/desktop.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 5;
 }
+
+.home-main__cover-mob {
+    height: 100svh;
+    width: 100.5svw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../digital-marketing/assets/img/main/mobile2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
+    display: none;
+  }
 
 .home-main__container {
     display: flex;
@@ -158,10 +168,6 @@
 }
 
 @media (max-width: 375px) {
-    .home-main__cover {
-        background-image: url('../../digital-marketing/assets/img/main/hero-mob-bg.png');
-    }
-
     .home-main__container {
         bottom: -240px;
         top: auto;
