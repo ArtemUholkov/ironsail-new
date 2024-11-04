@@ -94,6 +94,10 @@
     line-height: normal;
 }
 
+.departures__scroll-container {
+    display: none;
+}
+
 @media (max-width: 1588px) {
     .departures {
         gap: 50px;
@@ -104,6 +108,15 @@
         flex-wrap: nowrap;
         gap: 20px;
         overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .departures__grid::-webkit-scrollbar {
+        display: none;
+    }
+    .departures__grid {
+        scrollbar-width: none; 
     }
 
     .departures__grid-container {
@@ -117,6 +130,16 @@
     .marketing {
         flex: 0 0 auto;
 
+    }
+
+    .departures__scroll-container {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .departures__scroll-container::-webkit-scrollbar {
+        display: none;
     }
 }
 
