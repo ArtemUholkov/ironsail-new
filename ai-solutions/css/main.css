@@ -18,12 +18,12 @@
 }
 
 .dig-main_cover {
-  height: 100svh;
+  height: 100.5svh;
   width: 100svw;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('../../digital-marketing/assets/img/main/hero-bg.png');
+  background-image: url('../../digital-marketing/assets/img/main/desktop.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 5;
@@ -34,7 +34,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('../../digital-marketing/assets/img/main/hero-mob-bg.png');
+  background-image: url('../../digital-marketing/assets/img/main/mobile2.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 5;
