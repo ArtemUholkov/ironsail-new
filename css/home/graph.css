@@ -30,7 +30,6 @@
     line-height: 38.4px;
     text-transform: uppercase;
     text-align: left;
-    margin-top: 60px;
     margin-bottom: 52px;
 }
 
@@ -242,6 +241,8 @@
     .graph__title {
         font-size: 24px;
         line-height: 28.8px;
+        margin-top: 0;
+        text-align: left;
     }
 
     .graph__wraper-sections {
@@ -273,10 +274,6 @@
 }
 
 @media (max-width: 540px) {
-    .graph__title {
-        margin-top: 0;
-        text-align: left;
-    }
     .graph {
         padding: 52px 0;
         margin: auto 30px;

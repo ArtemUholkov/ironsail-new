@@ -1,7 +1,5 @@
 .dm-industries {
   width: 100%;
-  padding-top: 180px;
-  padding-bottom: 80px;
 }
 .dm_ind_title {
   color: var(--dark-text);
@@ -54,29 +52,28 @@
   position: absolute;
   bottom: 31px;
   left: 38px;
-
   background-size: auto 100%;
   background-repeat: no-repeat;
   transition: all 0.5s;
   border-radius: 4px;
 }
 .hw {
-  background-image: url('../assets/img/industries/hw1.png');
+  background-image: url('../../assets/img/home/industries/hw1.png')
 }
 .cons {
-  background-image: url('../assets/img/industries/c1.png');
+  background-image: url('../../assets/img/home/industries/c1.png')
 }
 .hs {
-  background-image: url('../assets/img/industries/hs1.png');
+  background-image: url('../../assets/img/home/industries/hs1.png')
 }
 .pic {
-  background-image: url('../assets/img/industries/pic.png');
+  background-image: url('../../assets/img/home/industries/pic.png')
 }
 .it {
-  background-image: url('../assets/img/industries/it1.png');
+  background-image: url('../../assets/img/home/industries/it1.png')
 }
 .ind {
-  background-image: url('../assets/img/industries/ind1.png');
+  background-image: url('../../assets/img/home/industries/ind1.png')
 }
 .dm-ind-slide:hover .hw {
   height: 530px;
@@ -86,7 +83,7 @@
   margin: initial;
   z-index: -1;
   transition: all 0.5s;
-  background-image: url('../assets/img/industries/hw2.png');
+  background-image: url('../../assets/img/home/industries/hw2.png')
 }
 .dm-ind-slide:hover .cons {
   height: 530px;
@@ -96,7 +93,7 @@
   margin: initial;
   z-index: -1;
   transition: all 0.5s;
-  background-image: url('../assets/img/industries/c2.png');
+  background-image: url('../../assets/img/home/industries/c2.png')
 }
 
 .dm-ind-slide:hover .hs {
@@ -107,7 +104,7 @@
   margin: initial;
   z-index: -1;
   transition: all 0.5s;
-  background-image: url('../assets/img/industries/hs2.png');
+  background-image: url('../../assets/img/home/industries/hs2.png')
 }
 .dm-ind-slide:hover .pic {
   height: 530px;
@@ -117,7 +114,7 @@
   margin: initial;
   z-index: -1;
   transition: all 0.5s;
-  background-image: url('../assets/img/industries/pic2.png');
+  background-image: url('../../assets/img/home/industries/pic2.png')
 }
 .dm-ind-slide:hover .it {
   height: 530px;
@@ -127,7 +124,7 @@
   margin: initial;
   z-index: -1;
   transition: all 0.5s;
-  background-image: url('../assets/img/industries/it2.png');
+  background-image: url('../../assets/img/home/industries/it2.png')
 }
 .dm-ind-slide:hover .ind {
   height: 530px;
@@ -137,7 +134,7 @@
   margin: initial;
   z-index: -1;
   transition: all 0.5s;
-  background-image: url('../assets/img/industries/ind2.png');
+  background-image: url('../../assets/img/home/industries/ind2.png')
 }
 .dm-ind-slide .svg1 {
   transition: all 0.5s;

@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: center;
     width: 100%;
     padding: 180px 0;
     position: relative;
@@ -114,7 +113,8 @@
 }
 
 .slider__container.expanded {
-    width: 100%; /* Target width when expanded */
+    width: 100%; 
+    transition: all 1s;
 }
 
 .slider__container.collapsed {
@@ -132,7 +132,7 @@
 }
 
 .slider__container.collapsed .slider__top-container {
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
     top: 57px;
     right: 50%;
     transform-origin: top right;
@@ -141,14 +141,17 @@
 
 .slider__container--hero1.collapsed {
     background: url('../../assets/img/home/slider/hero-1-1.png') center / cover no-repeat;
+    transition: all 1s;
 }
 
 .slider__container--hero2.collapsed {
     background: url('../../assets/img/home/slider/hero-2-1.png') center / cover no-repeat;
+    transition: all 1s;
 }
 
 .slider__container--hero3.collapsed {
     background: url('../../assets/img/home/slider/hero-3-1.png') center / cover no-repeat;
+    transition: all 1s;
 }
 
 .collapsed {
@@ -204,7 +207,6 @@
     cursor: pointer;
     transition: all 0.2s;
 }
-
 
 .slider__menu-item:after {
     content: '';
@@ -298,10 +300,11 @@
     }
 
     .slider__container {
-        width: 100%;
-        max-width: none;
+        width: 100% !important;
+        max-width: 100% !important;
         height: auto;
         transition: height 0.3s ease;
+        padding: 0;
     }
 
     .slider__container.expanded {
