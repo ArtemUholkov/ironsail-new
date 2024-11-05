@@ -266,6 +266,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
+        margin-bottom: 24px;
     }
 
     .graph__container-right {
@@ -275,9 +276,8 @@
 
 @media (max-width: 540px) {
     .graph {
-        padding: 22px 0;
-        margin: auto 30px;
-        background-color: transparent;
+        padding: 52px 20px;
+        margin: auto 20px;
     }
 
     .width {

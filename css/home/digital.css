@@ -11,7 +11,7 @@
     justify-content: center;
     width: 298px;
     height: 100%;
-    padding: 0px 38px;
+    padding: 10px 38px;
     background-color: var(--accent-blue);
     border-radius: 4px;
 }
@@ -85,7 +85,7 @@
 
 .digital-marketing__card:hover .ads {
     height: 573px;
-    width: 363px !important;
+    width: 382px !important;
     bottom: 0;
     left: 0;
     margin: initial;
@@ -96,7 +96,7 @@
 
 .digital-marketing__card:hover .meta {
     height: 573px;
-    width: 363px !important;
+    width: 382px !important;
     bottom: 0;
     left: 0;
     margin: initial;
@@ -107,7 +107,7 @@
 
 .digital-marketing__card:hover .organic {
     height: 573px;
-    width: 363px !important;
+    width: 382px !important;
     bottom: 0;
     left: 0;
     margin: initial;
@@ -118,7 +118,7 @@
 
 .digital-marketing__card:hover .local {
     height: 573px;
-    width: 363px !important;
+    width: 382px !important;
     bottom: 0;
     left: 0;
     margin: initial;
@@ -129,7 +129,7 @@
 
 .digital-marketing__card:hover .brand {
     height: 573px;
-    width: 363px !important;
+    width: 382px !important;
     bottom: 0;
     left: 0;
     margin: initial;
@@ -140,7 +140,7 @@
 
 .digital-marketing__card:hover .power {
     height: 573px;
-    width: 363px !important;
+    width: 382px !important;
     bottom: 0;
     left: 0;
     margin: initial;
@@ -152,7 +152,6 @@
 
 .digital-marketing__card:hover {
     transform: translateY(0);
-    cursor: pointer;
 }
 
 .digital-marketing__title-container {
@@ -253,6 +252,10 @@
 
 .digital-marketing__scroll {
     display: none;
+}
+
+.link:visited {
+    color: var(--light-text);
 }
 
 @media (max-width: 1870px) {
@@ -361,6 +364,7 @@
         border-radius: 4px;
         background-color: var(--light-text);
         box-sizing: border-box;
+        margin-bottom: 45px;
     }
 
     .digital-marketing__subtitle {
@@ -374,11 +378,13 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 470px) {
     .digital-marketing {
         padding: 80px 10px;
     }
+}
 
+@media (max-width: 375px) {
     .digital-marketing__title {
         font-size: 24px;
     }

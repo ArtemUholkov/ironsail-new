@@ -148,15 +148,27 @@
     }
 }
 
-@media (max-width: 1055px) {
+@media (max-width: 1065px) {
     .departures {
-        padding: 0 50px;
+        padding: 150px;
+    }
+}
+
+@media (max-width: 765px) {
+    .departures {
+        padding: 150px 100px;
+    }
+}
+
+@media (max-width: 665px) {
+    .departures {
+        padding: 150px 50px;
     }
 }
 
 @media (max-width: 500px) {
     .departures {
-        padding: 0 20px;
+        padding: 10px 20px;
         height: 1000px;
     }
 

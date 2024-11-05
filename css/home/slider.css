@@ -363,7 +363,7 @@
 
 @media (max-width: 500px) {
   .slider {
-    padding: 80px 10px;
+    padding: 80px 20px;
   }
 
   .slider__container.expanded {
@@ -412,6 +412,6 @@
 
 @media (max-width: 400px) {
     .slider {
-        padding: 65px 10px;
+        padding: 65px 20px;
     }
 }

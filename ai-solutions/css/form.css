@@ -1,11 +1,16 @@
 .form {
     padding-left: 200px;
     padding-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form_wrapper {
     padding-top: 150px;
     padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -21,13 +26,6 @@
     }
 }
 
-@media (max-width: 1870px) {
-    .form {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
 @media (max-width: 800px) {
     .form {
         padding-left: 0;
@@ -36,6 +34,10 @@
 
     .form_wrapper {
         margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
         width: 100%;
         height: 100%;
         background-image: url('../assets/form/bg-mobile.png');
