@@ -31,6 +31,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
     gap: 20px;
+    row-gap: 60px;
     justify-content: center;
     max-width: 1511px;
 }
@@ -252,6 +253,10 @@
 
 .digital-marketing__scroll {
     display: none;
+}
+
+.link {
+    color: var(--light-text);
 }
 
 .link:visited {

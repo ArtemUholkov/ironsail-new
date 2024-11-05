@@ -10,11 +10,18 @@
 .resources-section__wrapper {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 20px;
+    gap: 38px;
     padding: 40px;
-    max-width: 1440px;
     align-items: start;
     margin: 0 auto;
+}
+
+.resources-section__human {
+    max-width: 615px;
+}
+
+.resources-section__programmatic {
+    max-width: 662px;
 }
 
 .resources-section__human,
@@ -23,16 +30,15 @@
     background-color: var(--light-text);
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 4px;
 }
 
-.resources-section__human:hover {
-    transform: scale(1.05);
-    z-index: 1;
-}
-
+.resources-section__human:hover,
 .resources-section__programmatic:hover {
     transform: scale(1.05);
     z-index: 1;
+    box-shadow: 0px 0px 20px #a55ba4;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blurred {

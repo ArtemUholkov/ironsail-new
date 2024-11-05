@@ -1,5 +1,5 @@
 .dig-main {
-  height: calc(100svh);
+  height: calc(110svh);
   width: 100svw;
   display: flex;
   position: relative;
@@ -21,25 +21,14 @@
   height: 100.5svh;
   width: 100svw;
   position: absolute;
-  top: 0;
+  top: 100px;
   left: 0;
   background-image: url('../../digital-marketing/assets/img/main/desktop.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 5;
 }
-.dig-main_cover-mob {
-  height: 100svh;
-  width: 100svw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../../digital-marketing/assets/img/main/mobile2.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  z-index: 5;
-  display: none;
-}
+
 .dig-main_wrapper {
   padding: 17% 0 0 11%;
   z-index: 9;
@@ -78,6 +67,17 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 1372px) {
+  .dig-main_cover {
+      top: 50px;
+  }
+
+  .dig-main {
+      height: calc(105svh);
+  }
+}
+
+
 @media (max-width: 1250px) {
   .dig-main {
     align-items: flex-end;
@@ -113,11 +113,10 @@ a {
 }
 @media (max-width: 500px) {
   .dig-main_cover {
-    display: none;
-  }
-  .dig-main_cover-mob {
-    display: block;
-  }
+    background-image: url('../../digital-marketing/assets/img/main/mobile2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
   .dig-main_wrapper {
     padding-bottom: 80px;
   }

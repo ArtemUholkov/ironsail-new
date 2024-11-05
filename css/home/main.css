@@ -1,5 +1,5 @@
 .home-main {
-    height: calc(100svh);
+    height: calc(110svh);
     width: 100svw;
     display: flex;
     position: relative;
@@ -21,7 +21,7 @@
     min-height: 100.5svh;
     min-width: 100svw;
     position: absolute;
-    top: 0;
+    top: 100px;
     left: 0;
     background-image: url('../../digital-marketing/assets/img/main/desktop.png');
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@
     font-family: Manrope;
     font-size: 22px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 30.8px;
     width: 585px;
     margin-bottom: 80px;
@@ -113,6 +113,16 @@ a {
     }
 }
 
+@media (max-width: 1372px) {
+    .home-main__cover {
+        top: 50px;
+    }
+
+    .home-main {
+        height: calc(105svh);
+    }
+}
+
 @media (max-width: 1300px) {
     .home-main__container {
         top: 0;
@@ -145,6 +155,12 @@ a {
         max-width: 270px;
     }
 
+    .home-main__cover {
+        background-image: url('../../digital-marketing/assets/img/main/mobile2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
     .home-main__title {
         font-size: 28px;
         line-height: 33px;
@@ -163,7 +179,7 @@ a {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 432px) {
     .home-main__container {
         bottom: -280px;
         top: auto;
@@ -171,12 +187,6 @@ a {
 
     .home-main__text {
         margin-bottom: 0;
-    }
-
-    .home-main__cover {
-        background-image: url('../../digital-marketing/assets/img/main/mobile2.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
     }
 
     .home-main__video {

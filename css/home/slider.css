@@ -5,6 +5,7 @@
   width: 100%;
   padding: 180px 0;
   position: relative;
+  gap: 20px;
 }
 
 .slider__container {
@@ -16,8 +17,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  transition: width 3s ease, height 3s ease, opacity 3s ease, transform 3s ease;
-  transform-origin: left;
+  transition: width 0.7s ease, opacity 0.3s ease;
+  /* transform-origin: left; */
 }
 
 .slider__container--hero1 {
@@ -111,7 +112,7 @@
 }
 
 .expanded {
-  animation: expandWidth 0.7s ease forwards;
+  animation: expandWidth 4s ease forwards;
 }
 
 .slider__container.expanded {
@@ -157,6 +158,7 @@
 }
 
 .collapsed {
+  width: 300px; /* Мінімальна ширина при закритті */
   animation: collapseWidth 0.7s ease forwards;
 }
 
@@ -413,5 +415,14 @@
 @media (max-width: 400px) {
     .slider {
         padding: 65px 20px;
+    }
+
+    .slider__bottom-container {
+      left: 20px;
+    }
+   
+    a.main_button.main_button--dem {
+        width: 180px;
+        height: 40px;
     }
 }
