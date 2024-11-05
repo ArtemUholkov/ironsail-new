@@ -4,12 +4,11 @@
     justify-content: center;
     align-items: center;
     background-image: url('../../assets/img/home/cta/bg-blue.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     margin-bottom: 180px;
-    margin-top: 180px;
-    height: 397px;
     width: 100%;
+    padding: 157px 0 108px;
 }
 
 .cta__title {
@@ -40,6 +39,12 @@
 @media (max-width: 375px) {
     .cta {
         background-image: url('../../assets/img/home/cta/bg-blue-mobile.png');
-        height: 480px;
+        background-size: 100% 100%;
     }
+
+    .cta {
+        padding: 146px 0 148px;
+        margin-bottom: 0;
+    }
+    
 }

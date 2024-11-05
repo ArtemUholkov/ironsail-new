@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 72px;
-    margin-bottom: 180px;
+    margin-bottom: 88px;
 }
 
 .resources-section__wrapper {
@@ -109,6 +109,11 @@
     line-height: 32px;
 }
 
+.dem {
+    width: 188px;
+    height: 49px;
+}
+
 @media (max-width: 1480px) {
     .resources-section {
         padding: 20px;
@@ -196,6 +201,14 @@
 }
 
 @media (max-width: 400px) {
+    a.main_button.dem {
+        width: 100%;
+        max-width: 299px;
+    }
+
+    .resources-section__wrapper {
+        padding: 0;
+    }
 
     .resources-section__human,
     .resources-section__programmatic {
@@ -207,6 +220,7 @@
     .resources-section__human-title {
         font-size: 20px;
         margin-bottom: 22px;
+        max-width: 122px;
     }
 
     .resources-section__item-title {

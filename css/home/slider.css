@@ -94,6 +94,7 @@
     from {
         width: 300px;
     }
+
     to {
         width: 100%;
     }
@@ -103,6 +104,7 @@
     from {
         width: 100%;
     }
+
     to {
         width: 300px;
     }
@@ -113,13 +115,13 @@
 }
 
 .slider__container.expanded {
-    width: 100%; 
+    width: 100%;
     transition: all 1s;
 }
 
 .slider__container.collapsed {
     width: 300px;
-    transition: width 4s ease, height 4s ease; 
+    transition: width 4s ease, height 4s ease;
 }
 
 .slider__container.expanded .expand-btn {
@@ -136,7 +138,7 @@
     top: 57px;
     right: 50%;
     transform-origin: top right;
-    transition: transform 3s ease, top 3s ease, right 3s ease;
+    transition: transform 1s ease, top 1s ease, right 1s ease;
 }
 
 .slider__container--hero1.collapsed {
@@ -174,18 +176,25 @@
 }
 
 .slider__menu {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-40%);
+    left: 0;
     display: flex;
-    gap: 22px;
     padding: 22px 15px 22px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 22px;
     border-radius: 0px 4px 4px 0px;
-    background-color: var(--light-text);
+    background: #fff;
     box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
+    max-width: 159px;
+    z-index: 99;
+}
+
+.slider__menu.sticky {
     position: fixed;
-    left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -399,5 +408,10 @@
     .slider__container.collapsed .slider__top-container {
         right: 22px;
     }
+}
 
+@media (max-width: 400px) {
+    .slider {
+        padding: 65px 10px;
+    }
 }

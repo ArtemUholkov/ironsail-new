@@ -506,4 +506,8 @@
         max-width: 139px;
         max-height: 95px;
     }
+
+    .brands-section {
+        margin: 0 auto 0px;
+    }
 }
