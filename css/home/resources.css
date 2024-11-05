@@ -473,4 +473,8 @@
     .resources-section {
         gap: 20px;
     }
+
+    .resources-card__subtitle {
+        margin: 0;
+    }
 }

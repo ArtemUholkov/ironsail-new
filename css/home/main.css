@@ -84,6 +84,15 @@
     transition: all 0.3s;
 }
 
+.main_button--dem {
+    width: 216px;
+    height: 49px;
+}
+
+a {
+    text-decoration: none;
+}
+
 @media (max-width: 1555px) {
     .home-main__container {
         top: 301px;
@@ -174,5 +183,10 @@
         top: 50%;
         left: 35%;
         transform: translate(-35%, -50%);
+    }
+
+    a.main_button.main_button--dem {
+        width: 269px;
+        height: 40px;
     }
 }

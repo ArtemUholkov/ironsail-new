@@ -74,6 +74,10 @@
   transition: all 0.3s;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (max-width: 1250px) {
   .dig-main {
     align-items: flex-end;
