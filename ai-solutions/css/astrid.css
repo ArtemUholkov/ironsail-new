@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 20px;
+    gap: 50px;
     padding: 40px;
-    margin: 180px auto;
+    margin: 0 auto 140px;
     align-items: start;
     max-width: 1440px;
 }
@@ -55,10 +55,14 @@
     height: auto;
 }
 
-.astrid-section__image-container  img {
+.photo {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.photo-mob {
+    display: none;
 }
 
 .astrid-section__title-container {
@@ -68,23 +72,21 @@
     height: 100%;
     max-width: 332px;
     max-height: 754px;
+    padding: 20px;
     background-color: var(--accent-rose);
-    justify-content: center;
-    align-items: center;
+    border-radius: 4px;
 }
 
 .astrid-section__title-container h2 {
     color: var(--light-text);
     font-family: Oswald;
-    font-size: 160px;
+    font-size: 170px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    padding-top: 10px;
-    margin-top: 50px;
 }
 
 @media (max-width: 1250px) {
@@ -138,6 +140,12 @@
 @media (max-width: 500px) {
     .astrid-section__title-container h2 {
         font-size: 42px;
+        line-height: 43px;
+        padding: 0;
+    }
+
+    .astrid-section__title-container {
+        padding: 40px;
     }
 
     .astrid-section__text {
@@ -151,13 +159,17 @@
 
     .astrid-section__text-container {
         padding: 0 27px;
-        text-align: justify;
     }
 
-    .astrid-section__image-container  img {
+    .photo {
+        display: none;
+    }
+
+    .photo-mob {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
     }
 
     .astrid-section {

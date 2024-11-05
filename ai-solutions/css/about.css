@@ -2,17 +2,20 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 0px;
-    padding: 40px;
-    margin: 180px auto;
+    gap: 55px;
+    margin: 180px auto 160px;
     align-items: start;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    justify-content: center;
+    position: relative;
+    width: 100%;
 }
 
 .about-section__image,
 .about-section__content {
     max-width: 763px;
     width: 100%;
+    border-radius: 4px;
 }
 
 .about-section__title-container {
@@ -23,6 +26,10 @@
     max-width: 588px;
     max-height: 778px;
     background-color: var(--accent-rose);
+    border-radius: 4px;
+    padding-bottom: 68px;
+    padding-right: 68px;
+    padding-left: 48px;
 }
 
 .about-section__content {
@@ -48,6 +55,8 @@
     font-style: normal;
     font-weight: 300;
     line-height: 32px;
+    max-width: 606px;
+    width: 100%;
 }
 
 .about-section__image {
@@ -74,25 +83,30 @@
     text-transform: uppercase;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    padding-top: 20px;
 }
 
 .about__menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     display: flex;
-    gap: 22px;
     padding: 22px 15px 22px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 22px;
     border-radius: 0px 4px 4px 0px;
-    background-color: var(--light-text);
+    background: #fff;
     box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
+    max-width: 133px;
+    z-index: 99;
+}
+
+.about__menu.sticky {
     position: fixed;
-    left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 133px;
 }
 
 .about__menu-item {
@@ -111,7 +125,6 @@
     cursor: pointer;
     transition: all 0.2s;
 }
-
 
 .about__menu-item:after {
     content: '';
@@ -136,6 +149,12 @@
     left: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+    .about-section {
+        padding: 50px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -217,18 +236,39 @@
 }
 
 @media (max-width: 440px) {
+    .about-section {
+        margin-bottom: 40px;
+    }
+    .about-section__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-section__title-container {
+        width: 100%;
+        height: 100%;
+        max-width: 350px;
+        max-height: 126px;
+        border-radius: 4px;
+        padding: 38px 40px;
+    }
+
     .about-section__main-title {
         font-size: 42px;
         line-height: 43px;
+        margin: 0;
     }
 
     .about-section__text {
         font-size: 16px;
         line-height: 24px;
+        max-width: 299px;
     }
 
     .about-section__title {
         font-size: 20px;
         line-height: 28px;
+        max-width: 299px;
     }
 }

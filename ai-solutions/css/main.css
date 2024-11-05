@@ -117,4 +117,8 @@
   .dig-main_wrapper {
     padding-bottom: 80px;
   }
+  .dig-main_subtitle {
+    max-width: 309px;
+    margin-bottom: 12px;
+  }
 }

@@ -275,12 +275,16 @@
 
 @media (max-width: 540px) {
     .graph {
-        padding: 52px 0;
+        padding: 22px 0;
         margin: auto 30px;
         background-color: transparent;
     }
 
     .width {
         width: 100%;
+    }
+
+    .graph__title {
+        margin-bottom: 32px;
     }
 }

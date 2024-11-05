@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     padding: 180px;
-    gap: 40px;
+    gap: 70px;
 }
 
 .digital-marketing__sidebar {
@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     width: 298px;
+    height: 100%;
     padding: 0px 38px;
     background-color: var(--accent-blue);
     border-radius: 4px;
@@ -24,7 +25,6 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     margin: 0;
-    padding-top: 20px;
 }
 
 .digital-marketing__content {
@@ -32,13 +32,14 @@
     grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
     gap: 20px;
     justify-content: center;
+    max-width: 1511px;
 }
 
 .digital-marketing__card {
     border-radius: 4px;
     background: #fff;
-    height: 530px !important;
-    width: 363px !important;
+    height: 573px !important;
+    width: 100%;
     padding: 40px 38px;
     display: flex;
     flex-direction: column;
@@ -83,7 +84,7 @@
 }
 
 .digital-marketing__card:hover .ads {
-    height: 530px;
+    height: 573px;
     width: 363px !important;
     bottom: 0;
     left: 0;
@@ -94,7 +95,7 @@
 }
 
 .digital-marketing__card:hover .meta {
-    height: 530px;
+    height: 573px;
     width: 363px !important;
     bottom: 0;
     left: 0;
@@ -105,7 +106,7 @@
 }
 
 .digital-marketing__card:hover .organic {
-    height: 530px;
+    height: 573px;
     width: 363px !important;
     bottom: 0;
     left: 0;
@@ -116,7 +117,7 @@
 }
 
 .digital-marketing__card:hover .local {
-    height: 530px;
+    height: 573px;
     width: 363px !important;
     bottom: 0;
     left: 0;
@@ -127,7 +128,7 @@
 }
 
 .digital-marketing__card:hover .brand {
-    height: 530px;
+    height: 573px;
     width: 363px !important;
     bottom: 0;
     left: 0;
@@ -138,7 +139,7 @@
 }
 
 .digital-marketing__card:hover .power {
-    height: 530px;
+    height: 573px;
     width: 363px !important;
     bottom: 0;
     left: 0;
@@ -276,6 +277,7 @@
     .digital-marketing {
         grid-template-columns: 1fr;
         padding: 100px 50px;
+        gap: 10px;
     }
 
     .digital-marketing__sidebar {
@@ -324,6 +326,8 @@
     .digital-marketing__sidebar {
         width: 100%;
         margin-bottom: 20px;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .digital-marketing__sidebar h2 {
@@ -367,5 +371,15 @@
         display: block;
         margin-left: auto;
         padding-right: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .digital-marketing {
+        padding: 80px 10px;
+    }
+
+    .digital-marketing__title {
+        font-size: 24px;
     }
 }
