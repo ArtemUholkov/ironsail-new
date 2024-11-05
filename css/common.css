@@ -211,6 +211,9 @@ svg g path {
 svg {
   transition: all 0.3s;
 }
+.main__button--light:hover {
+  color: var(--dark-text);
+}
 .main_button:hover svg {
   transform: rotate(90deg);
   transition: all 0.3s;
