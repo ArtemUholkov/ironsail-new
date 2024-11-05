@@ -36,5 +36,7 @@
     background-image: url('../assets/img/form/mob.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
