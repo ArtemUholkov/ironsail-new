@@ -1,5 +1,5 @@
 .dev-services {
-  padding-top: 180px;
+  padding-top: 220px;
   width: 100%;
   position: relative;
 }
@@ -302,7 +302,7 @@ svg circle {
     padding-right: 20px;
   }
   .dev-services {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 0;
   }
 }
