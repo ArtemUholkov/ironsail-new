@@ -185,14 +185,12 @@ svg {
   backdrop-filter: blur(22px);
   transition: all 0.3s;
 }
-@media (max-width: 1770px) {
+@media (max-width: 1670px) {
   .navbar {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .header_button_pair {
-    display: none;
-  }
+
   .mobile_header_button_pair {
     display: flex;
     align-items: center;
@@ -201,7 +199,14 @@ svg {
     width: 100%;
   }
 }
+
 @media (max-width: 1480px) {
+  .header_button_pair {
+    display: none;
+  }
+  .navbar_menu {
+    justify-content: flex-end;
+  }
   .navbar {
     padding-left: 50px;
     padding-right: 50px;
