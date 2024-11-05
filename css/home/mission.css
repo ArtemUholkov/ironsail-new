@@ -54,6 +54,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 32px;
+    max-width: 606px;
 }
 
 .mission-section__mission {

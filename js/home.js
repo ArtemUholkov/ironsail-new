@@ -1,13 +1,11 @@
-document.querySelectorAll('.expand-btn').forEach((btn) => {
-    btn.addEventListener('click', (event) => {
-        document.querySelectorAll('.slider__container').forEach((container) => {
-            container.classList.remove('expanded');
-            container.classList.add('collapsed');
-            void container.offsetWidth;
+document.querySelectorAll('.slider__container').forEach((container) => {
+    container.addEventListener('click', () => {
+        document.querySelectorAll('.slider__container').forEach((item) => {
+            item.classList.remove('expanded');
+            item.classList.add('collapsed');
         });
-        const parentContainer = event.currentTarget.closest('.slider__container');
-        parentContainer.classList.remove('collapsed');
-        parentContainer.classList.add('expanded');
+        container.classList.remove('collapsed');
+        container.classList.add('expanded');
     });
 });
 
