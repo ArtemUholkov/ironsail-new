@@ -3,6 +3,7 @@
 }
 .dev-main_subtittle {
   max-width: 555px;
+  font-weight: 400;
 }
 @media (max-width: 566px) {
   .dev-main-title {
@@ -14,5 +15,4 @@
   }
 }
 .dig-main_cover-mob {
-  height: 100.5svh;
 }

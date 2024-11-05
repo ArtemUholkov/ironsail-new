@@ -1,5 +1,6 @@
 .dig-main {
-  height: calc(100svh);
+  height: calc(100svh - 108px);
+  top: 108px;
   width: 100svw;
   display: flex;
   position: relative;
@@ -18,7 +19,7 @@
 }
 
 .dig-main_cover {
-  height: 100.5svh;
+  height: calc(100.5svh - 108px);
   width: 100svw;
   position: absolute;
   top: 0;
@@ -28,8 +29,44 @@
   background-size: 100% 100%;
   z-index: 5;
 }
+@media (max-width: 1480px) {
+  .dig-main {
+    height: calc(100svh - 107px);
+    top: 107px;
+  }
+
+  .dig-main_cover {
+    height: calc(100.5svh - 107px);
+    width: 100svw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/img/main/desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
+  }
+}
+@media (max-width: 1370px) {
+  .dig-main {
+    height: calc(100svh - 59px);
+    top: 59px;
+  }
+
+  .dig-main_cover {
+    height: calc(100.5svh - 59px);
+    width: 100.5svw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/img/main/desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
+  }
+}
 .dig-main_cover-mob {
-  height: 100.5svh;
+  height: calc(100.5svh - 59px);
   width: 100.5svw;
   position: absolute;
   top: 0;
@@ -41,7 +78,7 @@
   display: none;
 }
 .dig-main_wrapper {
-  padding: 17% 0 0 11%;
+  padding: 11% 0 0 11%;
   z-index: 9;
 }
 
@@ -54,7 +91,7 @@
   color: #fff;
   font-family: 'Manrope', sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 140%;
   margin-bottom: 42px;
   max-width: 423px;
@@ -98,7 +135,7 @@
   .dig-main_subtitle {
     font-size: 16px;
     max-width: 269px;
-    font-weight: 400;
+    font-weight: 300;
   }
   .white_button {
     width: 309px;
