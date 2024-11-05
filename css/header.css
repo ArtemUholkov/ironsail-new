@@ -33,6 +33,7 @@ header {
   padding-right: 200px;
   padding-top: 30px;
   padding-bottom: 30px;
+  flex-wrap: nowrap;
 }
 
 .stick {
@@ -190,19 +191,18 @@ svg {
     padding-left: 50px;
     padding-right: 50px;
   }
+}
 
+@media (max-width: 1480px) {
+  .header_button_pair {
+    display: none;
+  }
   .mobile_header_button_pair {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 0;
     width: 100%;
-  }
-}
-
-@media (max-width: 1480px) {
-  .header_button_pair {
-    display: none;
   }
   .navbar_menu {
     justify-content: flex-end;

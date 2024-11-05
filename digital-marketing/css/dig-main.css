@@ -18,7 +18,7 @@
 }
 
 .dig-main_cover {
-  height: 100svh;
+  height: 100.5svh;
   width: 100svw;
   position: absolute;
   top: 0;
@@ -29,7 +29,7 @@
   z-index: 5;
 }
 .dig-main_cover-mob {
-  height: 100svh;
+  height: 100.5svh;
   width: 100.5svw;
   position: absolute;
   top: 0;
