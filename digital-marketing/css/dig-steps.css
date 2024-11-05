@@ -239,7 +239,7 @@
   line-height: 120%;
 }
 .im_hiw_item_text {
-  color: var(--blue, #141751);
+  color: var(--dark-text);
   font-family: 'Manrope', sans-serif;
   font-size: 18px;
   font-weight: 400;

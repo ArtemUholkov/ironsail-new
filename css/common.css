@@ -198,6 +198,8 @@ body {
   background: var(--dark-button-hover-bg);
   cursor: pointer;
   transition: all 0.3s;
+  color: #fff;
+  text-decoration: none;
 }
 svg g path {
   transition: all 0.3s;
@@ -258,4 +260,26 @@ svg {
   cursor: pointer;
   transition: all 0.3s;
   opacity: 1 !important;
+}
+.modal {
+  overflow-y: auto;
+}
+.modal-open {
+  overflow: auto;
+}
+
+.modal-open[style] {
+  padding-right: 0px !important;
+}
+.modal-dialog {
+  max-width: 1000px;
+}
+a:hover {
+  text-decoration: none !important;
+}
+@media (max-width: 1700px) {
+  .revenue_menu,
+  .about__menu {
+    display: none !important;
+  }
 }
