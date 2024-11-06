@@ -17,39 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 ////////// SETVICES SECTION ////////////
 //SCROLL SWIPER + BUTTON
 
-var swiper3 = new Swiper('.mySwiper3', {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  freeMode: true,
-  breakpoints: {
-    330: { slidesPerView: 1, spaceBetween: 20 },
-    830: { slidesPerView: 2, spaceBetween: 20 },
-    1260: { slidesPerView: 3, spaceBetween: 20 },
-    1600: { slidesPerView: 4, spaceBetween: 20 },
-  },
-});
-
-let isEnd = false; 
+let isEnd = false;
 
 document.querySelector('.dm-serv-scroll').addEventListener('click', () => {
   if (isEnd) {
-    swiper3.slidePrev(); 
+    swiper3.slidePrev();
   } else {
-    swiper3.slideNext(); 
+    swiper3.slideNext();
   }
 
   isEnd = swiper3.isEnd ? true : swiper3.isBeginning ? false : isEnd;
 });
-
-
-
-
-
-
 
 //////// INDUSTRIES SECTION ////////////
 //SCROLL SWIPER + BUTTON
@@ -59,33 +40,32 @@ var swiper2 = new Swiper('.mySwiper2', {
   spaceBetween: 20,
   freeMode: true,
   breakpoints: {
-      330: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-      },
-      830: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-      },
-      1300: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-      },
-      1600: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-      },
+    330: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    830: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1600: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
   },
 });
 
-let isAtEnd = false; 
+let isAtEnd = false;
 
 document.querySelector('.dm-ind-scroll').addEventListener('click', () => {
-
   if (isAtEnd) {
-      swiper2.slidePrev();
+    swiper2.slidePrev();
   } else {
-      swiper2.slideNext();
+    swiper2.slideNext();
   }
 
   isAtEnd = swiper2.isEnd ? true : swiper2.isBeginning ? false : isAtEnd;

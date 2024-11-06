@@ -1659,13 +1659,14 @@
     </script>
     <script>
       var swiper3 = new Swiper('.mySwiper3', {
-        slidesPerView: 1,
+        slidesPerView: 4,
         spaceBetween: 20,
+        freeMode: true,
         breakpoints: {
-          330: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
+          330: { slidesPerView: 1, spaceBetween: 20 },
+          830: { slidesPerView: 2, spaceBetween: 20 },
+          1260: { slidesPerView: 3, spaceBetween: 20 },
+          1600: { slidesPerView: 4, spaceBetween: 20 },
         },
       });
     </script>
