@@ -46,6 +46,7 @@
   flex-direction: column;
   position: relative;
   align-items: flex-start;
+  z-index: 99;
 }
 
 .digital-marketing__wrap {
@@ -58,6 +59,7 @@
   background-repeat: no-repeat;
   transition: all 0.5s;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .ads {
