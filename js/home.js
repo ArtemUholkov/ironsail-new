@@ -27,14 +27,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.digital-marketing__card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const targetUrl = card.getAttribute('data-url');
+            if (targetUrl) {
+                window.location.href = targetUrl;
+            }
+        });
+    });
+});
+
+
+
 ////////// DIGITAL MARKETING SECTION ////////////
 //SCROLL BUTTON
 
 const scrollButton = document.querySelector('.digital-marketing__scroll');
 const scrollContainer = document.querySelector('.digital-marketing__content');
 
-let scrollDirectionForward = true; 
-const scrollAmount = 300; 
+let scrollDirectionForward = true;
+const scrollAmount = 300;
 
 scrollButton.addEventListener('click', () => {
     if (scrollDirectionForward) {
@@ -45,9 +61,9 @@ scrollButton.addEventListener('click', () => {
     const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
     if (scrollContainer.scrollLeft >= maxScrollLeft) {
-        scrollDirectionForward = false; 
+        scrollDirectionForward = false;
     } else if (scrollContainer.scrollLeft <= 0) {
-        scrollDirectionForward = true; 
+        scrollDirectionForward = true;
     }
 });
 
@@ -80,7 +96,7 @@ var swiper2 = new Swiper('.mySwiper2', {
     },
 });
 
-let isAtEnd = false; 
+let isAtEnd = false;
 
 document.querySelector('.dm-ind-scroll').addEventListener('click', () => {
 
@@ -94,4 +110,4 @@ document.querySelector('.dm-ind-scroll').addEventListener('click', () => {
 });
 
 
-  
+
