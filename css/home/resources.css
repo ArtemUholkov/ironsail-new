@@ -51,7 +51,6 @@
 
 .resources-card:hover {
     transform: translateY(0);
-    cursor: pointer;
 }
 
 .resources__wrap {

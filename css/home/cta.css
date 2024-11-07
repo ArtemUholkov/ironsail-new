@@ -36,12 +36,15 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 660px) {
     .cta {
         background-image: url('../../assets/img/home/cta/bg-blue-mobile.png');
         background-size: 100% 100%;
     }
+}
 
+
+@media (max-width: 375px) {
     .cta {
         padding: 146px 0 148px;
         margin-bottom: 0;
