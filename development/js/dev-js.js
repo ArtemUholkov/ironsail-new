@@ -35,29 +35,6 @@ document.querySelector('.dm-serv-scroll').addEventListener('click', () => {
 //////// INDUSTRIES SECTION ////////////
 //SCROLL SWIPER + BUTTON
 
-var swiper2 = new Swiper('.mySwiper2', {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  freeMode: true,
-  breakpoints: {
-    330: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    830: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1300: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    1600: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-});
 
 let isAtEnd = false;
 

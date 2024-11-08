@@ -1645,6 +1645,31 @@
       });
     </script>
     <script>
+      var swiper2 = new Swiper('.mySwiper2', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        freeMode: true,
+        breakpoints: {
+          330: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          830: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1300: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1600: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+    <script>
       var swiper = new Swiper('.mySwiper4', {
         speed: 2000,
         autoplay: true,
